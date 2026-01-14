@@ -1,0 +1,5 @@
+wwwroot\css\app.css
+wwwroot\icon-192.png
+wwwroot\images\FotoPerfil.png
+wwwroot\images\profile-placeholder.svg
+wwwroot\index.html

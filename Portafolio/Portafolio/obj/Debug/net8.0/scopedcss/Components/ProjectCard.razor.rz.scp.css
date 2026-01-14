@@ -1,0 +1,27 @@
+.project-card[b-u2q05bz6ar] {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-title[b-u2q05bz6ar] {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+    letter-spacing: -0.01em;
+}
+
+.project-tags[b-u2q05bz6ar] {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.project-tags .badge[b-u2q05bz6ar] {
+    margin: 0;
+}
+
+.project-link[b-u2q05bz6ar] {
+    font-size: 0.9rem;
+}
+

@@ -1,0 +1,50 @@
+.contact-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-card {
+    width: 100%;
+    max-width: 40rem;
+}
+
+.contact-row {
+    display: grid;
+    grid-template-columns: 8rem 1fr;
+    gap: 1rem;
+    padding: 0.9rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.contact-row:last-child {
+    border-bottom: none;
+    padding-bottom: 0.25rem;
+}
+
+.contact-label {
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    font-weight: 700;
+}
+
+.contact-value {
+    font-weight: 650;
+    color: var(--text-color);
+    text-decoration: none;
+    word-break: break-word;
+}
+
+.contact-value:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+@media (max-width: 520px) {
+    .contact-row {
+        grid-template-columns: 1fr;
+        gap: 0.35rem;
+    }
+}
+

@@ -1,0 +1,27 @@
+.project-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-title {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+    letter-spacing: -0.01em;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.project-tags .badge {
+    margin: 0;
+}
+
+.project-link {
+    font-size: 0.9rem;
+}
+

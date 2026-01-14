@@ -1,0 +1,65 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = Portafolio
+build_property.RootNamespace = Portafolio
+build_property.ProjectDir = d:\Proyectos\Portafolio\Portafolio\Portafolio\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = false
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = d:\Proyectos\Portafolio\Portafolio\Portafolio
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[d:/Proyectos/Portafolio/Portafolio/Portafolio/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/Proyectos/Portafolio/Portafolio/Portafolio/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/Proyectos/Portafolio/Portafolio/Portafolio/Components/Footer.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xGb290ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-7mgdlo0fkl
+
+[d:/Proyectos/Portafolio/Portafolio/Portafolio/Components/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xOYXZNZW51LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-w0f3z1dyhv
+
+[d:/Proyectos/Portafolio/Portafolio/Portafolio/Components/ProjectCard.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQcm9qZWN0Q2FyZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-u2q05bz6ar
+
+[d:/Proyectos/Portafolio/Portafolio/Portafolio/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-q7h3gz53g5
+
+[d:/Proyectos/Portafolio/Portafolio/Portafolio/Pages/About.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWJvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-4so0itgq57
+
+[d:/Proyectos/Portafolio/Portafolio/Portafolio/Pages/Contact.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGFjdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-g9lkqy2d30
+
+[d:/Proyectos/Portafolio/Portafolio/Portafolio/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-mu7spfcb1w
+
+[d:/Proyectos/Portafolio/Portafolio/Portafolio/Pages/Projects.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvamVjdHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-1eikbm0lml

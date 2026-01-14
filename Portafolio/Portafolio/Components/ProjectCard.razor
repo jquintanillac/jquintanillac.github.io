@@ -1,0 +1,39 @@
+<div class="card project-card">
+    <div>
+        <h3 class="project-title">@ResolvedTitle</h3>
+        <p class="text-muted mb-4">@ResolvedDescription</p>
+        <div class="project-tags">
+            @if (ResolvedTags.Count > 0)
+            {
+                @foreach (var tag in ResolvedTags)
+                {
+                    <span class="badge">@tag</span>
+                }
+            }
+        </div>
+    </div>
+    <div class="mt-4">
+        @if (!string.IsNullOrWhiteSpace(ResolvedRepoUrl))
+        {
+             <a href="@ResolvedRepoUrl" target="_blank" rel="noopener noreferrer" class="btn btn-outline project-link">
+                Ver Proyecto <span style="font-size:0.8em">↗</span>
+             </a>
+        }
+    </div>
+</div>
+
+@code {
+    // Componente reutilizable para mostrar proyectos.
+    // Mantiene compatibilidad con props sueltas y permite usar el modelo Project.cs.
+    [Parameter] public Project? Project { get; set; }
+
+    [Parameter] public string Title { get; set; } = "";
+    [Parameter] public string Description { get; set; } = "";
+    [Parameter] public List<string> Tags { get; set; } = new();
+    [Parameter] public string RepoUrl { get; set; } = "";
+
+    private string ResolvedTitle => Project?.Title ?? Title;
+    private string ResolvedDescription => Project?.Description ?? Description;
+    private IReadOnlyList<string> ResolvedTags => Project?.Technologies ?? Tags;
+    private string? ResolvedRepoUrl => Project?.RepoUrl ?? RepoUrl;
+}

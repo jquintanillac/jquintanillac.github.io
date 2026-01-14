@@ -1,0 +1,29 @@
+.footer {
+    background-color: var(--surface-color);
+    border-top: 1px solid var(--border-color);
+    margin-top: auto;
+}
+
+.footer-note {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.footer-link {
+    color: var(--text-muted);
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.35rem 0.6rem;
+    border-radius: 9999px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.footer-link:hover {
+    background: var(--background-color);
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .footer-link { transition: none; }
+}

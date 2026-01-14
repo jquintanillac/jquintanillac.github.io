@@ -1,0 +1,112 @@
+@page "/projects"
+
+<PageTitle>Proyectos | Portafolio</PageTitle>
+
+<div class="container py-5">
+    <header class="page-header text-center">
+        <h1 class="page-title">Proyectos destacados</h1>
+        <p class="page-subtitle mx-auto">
+            Selección de iniciativas orientadas a arquitectura, integración y entrega continua. 
+            Cada proyecto enfatiza estándares corporativos: seguridad, observabilidad y mantenibilidad.
+        </p>
+    </header>
+
+    <div class="projects-grid">
+        @foreach (var project in FeaturedProjects)
+        {
+            <ProjectCard Project="project" />
+        }
+    </div>
+
+    <section class="contrib-section">
+        <h2 class="contrib-title text-center">Aportes</h2>
+        <p class="text-muted contrib-subtitle mx-auto text-center">
+            Comparto aprendizaje aplicado y buenas prácticas en formato de cursos y contenido técnico.
+        </p>
+
+        <div class="contrib-grid">
+            @foreach (var item in Contributions)
+            {
+                <div class="card contrib-card">
+                    <div>
+                        <h3 class="contrib-card-title">@item.Title</h3>
+                        <p class="text-muted mb-4">@item.Description</p>
+                        <div class="contrib-tags">
+                            @foreach (var tag in item.Tags)
+                            {
+                                <span class="badge">@tag</span>
+                            }
+                        </div>
+                    </div>
+
+                    <div class="contrib-cta">
+                        <a class="btn btn-outline" href="@item.Url" target="_blank" rel="noopener noreferrer">
+                            @item.Cta <span style="font-size:0.8em">↗</span>
+                        </a>
+                    </div>
+                </div>
+            }
+        </div>
+    </section>
+</div>
+
+@code {
+    private sealed record Contribution(string Title, string Description, string Url, string Cta, IReadOnlyList<string> Tags);
+
+    private static readonly IReadOnlyList<Project> FeaturedProjects = new[]
+    {
+        new Project
+        {
+            Title = "Plataforma de asistencia facil para trabajadores de campo",
+            Description = "APIs REST, seguridad JWT/OAuth2, Blazor web assembly, Maui y SQL server.",
+            Technologies = new[] { "ASP.NET Core", "REST", "SQL Server", "Postman", "Maui", "C#", "SQL server", "Blazor", "Arquitectura Limpia", "Github" },
+            RepoUrl = "https://github.com/jquintanillac/AsistenciaFacial"
+        },
+        new Project
+        {
+            Title = "Plataforma de Taxis estilo InDriver",
+            Description = "APIs REST, seguridad JWT/OAuth2, Blazor web assembly, Maui y SQL server.",
+            Technologies = new[] { "ASP.NET Core", "REST", "SQL Server", "Postman", "Maui", "C#", "SQL server", "Blazor", "Arquitectura Limpia", "Github" },
+            RepoUrl = "https://github.com/jquintanillac/AppTaxi"
+        },
+        new Project
+        {
+            Title = "Sistema de Inventarios",
+            Description = "APIs REST, seguridad JWT/OAuth2, Blazor web assembly, Maui y SQL server, Facturacion Electronica, IA para KPIs y Importacion de costos",
+            Technologies = new[] { "ASP.NET Core", "REST", "SQL Server", "Postman", "Maui", "C#", "SQL server", "Blazor", "Arquitectura Limpia", "Github" },
+            RepoUrl = "https://github.com/jquintanillac/InventariosNC8"
+        },
+        new Project
+        {
+            Title = "Sistema de espacios deportivios",
+            Description = "Aplicaciones para reserva de espacios deportivos.",
+            Technologies = new[] { ".NET core 6", "Xamarin", "Razor", "MVC", "Arquitectura monolitica", "Jquery", "Ajax", "SQL Server" },
+            RepoUrl = "https://github.com/jquintanillac/Deportivo"
+        },
+                new Project
+        {
+            Title = "Sistema de Camiones",
+            Description = "Sistema para generar la ruta de camiones asi como asignacion de carga y de costo de mantenimiento.",
+            Technologies = new[] { ".NET core 6", "Xamarin", "Razor", "MVC", "Arquitectura monolitica", "Jquery", "Ajax", "SQL Server" },
+            RepoUrl = "https://github.com/jquintanillac/SistemaCamiones"
+        },
+        new Project
+        {
+            Title = "Sistema de patio de camiones",
+            Description = "Gestionar los camiones que esten necesitando cargar en la empresa y canales de carga para dichos camiones",
+            Technologies = new[] { ".NET core 6", "Xamarin", "Razor", "MVC", "Arquitectura monolitica", "Jquery", "Ajax", "SQL Server", "WhatsappAuto" },
+            RepoUrl = "https://github.com/jquintanillac/YMS"
+        }
+    };
+
+    private static readonly IReadOnlyList<Contribution> Contributions = new[]
+    {
+        new Contribution(
+            Title: "Cursos",
+            Description: "Desarrollo Full Stack: Sistema de Asistencias Inteligente con .NET 8, SQL server, Blazor y MAUI - Tutorial Paso a Paso",
+            Url: "https://www.youtube.com/playlist?list=PLpIWOewKWwnIuA1xezpWWsYo8puWIjMBo",
+            Cta: "Ver cursos",
+            Tags: new[] { ".NET", "Arquitectura", "Buenas prácticas", "Full Stack" }
+        )
+    };
+}

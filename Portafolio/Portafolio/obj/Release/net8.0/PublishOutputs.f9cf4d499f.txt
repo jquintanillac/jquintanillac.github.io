@@ -1,0 +1,2 @@
+D:\Proyectos\Portafolio\Portafolio\Portafolio\bin\Release\net8.0\publish\emcc-props.json
+D:\Proyectos\Portafolio\Portafolio\Portafolio\bin\Release\net8.0\publish\web.config

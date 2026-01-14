@@ -1,0 +1,44 @@
+.about-grid {
+    display: grid;
+    gap: 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+    .about-grid {
+        grid-template-columns: 1.2fr 0.8fr;
+        align-items: start;
+    }
+
+    .about-grid > section:nth-child(3) {
+        grid-column: 1 / -1;
+    }
+}
+
+.about-section-title {
+    margin: 0 0 0.75rem 0;
+    font-size: 1.2rem;
+}
+
+.about-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.about-tags .badge {
+    margin: 0;
+}
+
+.about-list {
+    margin: 0;
+    padding-left: 1.15rem;
+    color: var(--text-muted);
+}
+
+.about-list li {
+    margin: 0.55rem 0;
+}
+

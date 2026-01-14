@@ -1,0 +1,56 @@
+.projects-grid {
+    align-items: stretch;
+}
+
+.page-header {
+    padding-top: 0.5rem;
+}
+
+.contrib-section {
+    margin-top: 3.25rem;
+}
+
+.contrib-title {
+    margin-bottom: 0.6rem;
+}
+
+.contrib-subtitle {
+    max-width: 52rem;
+    margin: 0 auto 1.5rem auto;
+}
+
+.contrib-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .contrib-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+.contrib-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contrib-card-title {
+    margin: 0 0 0.5rem 0;
+}
+
+.contrib-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.contrib-tags .badge {
+    margin: 0;
+}
+
+.contrib-cta {
+    margin-top: 1.25rem;
+}

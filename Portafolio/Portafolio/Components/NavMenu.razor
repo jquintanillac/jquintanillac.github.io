@@ -1,0 +1,41 @@
+@inject NavigationManager Navigation
+
+<nav class="navbar" aria-label="Navegación principal">
+    <div class="container navbar-inner">
+        <a class="brand" href="" aria-label="Inicio">
+            <span class="brand-mark">&lt;/&gt;</span>
+            <span class="brand-text">Juan Quintanilla</span>
+        </a>
+
+        <button class="menu-toggle md:hidden"
+                type="button"
+                @onclick="ToggleNav"
+                aria-label="Abrir/cerrar menú"
+                aria-expanded="@(!collapseNavMenu)">
+            ☰
+        </button>
+
+        <div class="@NavMenuCssClass md:flex navbar-links">
+            <NavLink class="nav-link" href="" Match="NavLinkMatch.All" >Inicio</NavLink>
+            <NavLink class="nav-link" href="about">Sobre mí</NavLink>
+            <NavLink class="nav-link" href="projects">Proyectos</NavLink>
+            <NavLink class="nav-link" href="contact">Contacto</NavLink>
+        </div>
+    </div>
+</nav>
+
+@code {
+    private bool collapseNavMenu = true;
+
+    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : "expand";
+
+    private void ToggleNav()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+
+    protected override void OnInitialized()
+    {
+        Navigation.LocationChanged += (_, _) => collapseNavMenu = true;
+    }
+}
