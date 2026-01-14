@@ -528,3 +528,36 @@ main[b-q7h3gz53g5] {
 .contrib-cta[b-1eikbm0lml] {
     margin-top: 1.25rem;
 }
+
+.participation-section[b-1eikbm0lml] {
+    margin-top: 3.25rem;
+}
+
+.participation-title[b-1eikbm0lml] {
+    margin-bottom: 0.6rem;
+}
+
+.participation-subtitle[b-1eikbm0lml] {
+    max-width: 52rem;
+    margin: 0 auto 1.5rem auto;
+}
+
+.participation-grid[b-1eikbm0lml] {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.participation-card[b-1eikbm0lml] {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.participation-card-title[b-1eikbm0lml] {
+    margin: 0 0 0.5rem 0;
+}
+
+.participation-cta[b-1eikbm0lml] {
+    margin-top: 1.25rem;
+}

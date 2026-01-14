@@ -54,3 +54,36 @@
 .contrib-cta {
     margin-top: 1.25rem;
 }
+
+.participation-section {
+    margin-top: 3.25rem;
+}
+
+.participation-title {
+    margin-bottom: 0.6rem;
+}
+
+.participation-subtitle {
+    max-width: 52rem;
+    margin: 0 auto 1.5rem auto;
+}
+
+.participation-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.participation-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.participation-card-title {
+    margin: 0 0 0.5rem 0;
+}
+
+.participation-cta {
+    margin-top: 1.25rem;
+}
